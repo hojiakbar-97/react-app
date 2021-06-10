@@ -1,0 +1,503 @@
+
+.html-app-header{
+  background: url(https://algoworksupload.s3.amazonaws.com/new-algoworks/wp-content/uploads/2016/03/09070753/html_banner_bg.jpg)
+  no-repeat center center / cover;
+  height: 90vh;
+  position: relative;
+  padding-top: 100px;
+  .container{
+    .col-md-12{
+      text-align: center;
+      padding: 3rem;
+      h2{
+        color: #EA5F2F;
+        font-size: 35px;
+        b{
+          font-size: 33px;
+          vertical-align: middle;
+        }
+      }
+      p{
+        color: white;
+        font-size: 18px;
+      }
+      .btn-group{
+        padding-top: 2rem;
+        a{
+          font-size: 12.1px;
+          padding: 10px 20px;
+          background: white;
+          transition: all 0.6s ease 0s;
+          border: none;
+          &:focus{
+            box-shadow: none;
+          }
+          &:after{
+            height: 100%;
+            top: 0;
+            width: 0;
+            position: absolute;
+            content: '';
+            z-index: -1;
+            transition: all 0.5s ease 0s;
+            border-radius: 25px;
+          }
+          &:hover{
+            color: white!important;
+          }
+          &:hover:after{
+            background: #EA5F2F;
+            width: 100%;
+          }
+          &:nth-child(1){
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            &:after{
+              left: 0;
+            }
+          }
+          &:nth-child(2){
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            &:after{
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#ht_1{
+  background-color: #EA5F2F;
+  padding-top: 80px;
+  padding-bottom: 0;
+  .container{
+    .row{
+      .col-md-6{
+        color: white;
+        margin: auto;
+        img{
+          width: 90%;
+        }
+        h3{
+          font-size: 33px;
+        }
+        p{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+#ht_2{
+  padding: 60px 0 80px;
+  background: url(https://algoworksupload.s3.amazonaws.com/new-algoworks/wp-content/uploads/2016/03/09070815/html_why_bgg.jpg)
+  repeat fixed center top;
+  .container{
+    .row{
+      .col-md-12{
+        text-align: center;
+        h2{
+          color: #EA5F2F;
+          font-size: 33px;
+          line-height: 40px;
+          b{
+            vertical-align: middle;
+          }
+        }
+        h3{
+          color: #959494;
+          font-size: 19px;
+          font-weight: normal;
+        }
+      }
+      .col-md-4{
+        text-align: center;
+        margin-top: 3rem;
+        img{
+          width: 33%;
+          margin: auto;
+          display: block;
+        }
+        h4{
+          color: white;
+          font-size: 20px;
+          margin: 10px 0;
+        }
+        p{
+          color: #959494;
+          font-size: 15px;
+          margin: 0 20px;
+          b{
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
+
+#ht_3{
+  background-color: #25292A;
+  padding-top: 80px;
+  .container{
+    .row{
+      .col-md-6{
+        h2{
+          color: #EA5F2F;
+        }
+        h5{
+          color: #959494;
+          font-size: 18px;
+          font-weight: normal;
+        }
+        h2,h5{
+          margin-left: 1rem;
+        }
+        .square-box{
+          margin: 50px 0;
+          float: left;
+          width: 100%;
+          .col-md-12{
+            padding: 0;
+            .adv-box{
+              display: flex;
+              justify-content: center;
+              margin: 0 0 3px;
+              width: 100%;
+              .icon{
+                height: 60px;
+                width: 70px;
+                text-align: center;
+                background: #f8682b;
+                padding-top: 15px;
+                img{
+                  width: 50%;
+                }
+              }
+              .icon-desc{
+                width: 80%;
+                margin-left: 3px;
+                margin-right: 3px;
+                background: white;
+                padding: 5px 20px;
+                p{
+                  color: #25292a;
+                  margin: 0;
+                  font-size: 15px;
+                }
+              }
+            }
+            &:nth-child(2){
+              .adv-box{
+                .icon{
+                  padding-top: 10px;
+                }
+                p{
+                  padding-top: 12px;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(2){
+          margin-top: 2rem;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/***************************************
+           Responsive Style
+****************************************/
+
+@media (min-width: 0) and (max-width: 576px){
+
+  .html-app-header{
+    padding-top: 130px;
+    .container{
+      .col-md-12{
+        padding: 1rem 0;
+        h2{
+          font-size: 25px;
+          b{
+            font-size: 25px;
+          }
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  #ht_1{
+    .container{
+      .row{
+        .col-md-6{
+          img{
+            width: 80%;
+            margin: auto;
+            display: block;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  #ht_2{
+    .container{
+      .row{
+        .col-md-12{
+          h2{
+            font-size: 25px;
+          }
+          h3{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  #ht_3{
+    .container{
+      .row{
+        .col-md-6{
+          h2{
+            font-size: 25px;
+          }
+          h2,h5{
+            margin-left: 0;
+          }
+          .square-box{
+            .col-md-12{
+              .adv-box{
+                .icon{
+                  height: 80px;
+                  width: 90px;
+                  padding-top: 22px!important;
+                }
+                .icon-desc{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+  .html-app-header{
+    height: 100vh;
+    .container{
+      .col-md-12{
+        padding: 1rem 0;
+        h2{
+          font-size: 25px;
+          b{
+            font-size: 25px;
+          }
+        }
+        p{
+          font-size: 16px;
+        }
+        .btn-group{
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  #ht_1{
+    .container{
+      .row{
+        .col-md-6{
+          img{
+            width: 70%;
+            margin: auto;
+            display: block;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  #ht_2{
+    .container{
+      .row{
+        .col-md-12{
+          h2{
+            font-size: 25px;
+          }
+          h3{
+            font-size: 16px;
+          }
+        }
+        .col-md-4{
+          img{
+            width: 28%;
+          }
+        }
+      }
+    }
+  }
+  #ht_3{
+    .container{
+      .row{
+        .col-md-6{
+          h2{
+            font-size: 25px;
+          }
+          h2,h5{
+            margin-left: 0;
+          }
+          .square-box{
+            .col-md-12{
+              .adv-box{
+                .icon{
+                  height: 80px;
+                  width: 90px;
+                  padding-top: 22px!important;
+                }
+                .icon-desc{
+                  width: 100%;
+                  padding-top: 10px;
+                }
+              }
+            }
+          }
+          &:nth-child(2){
+            margin: 0;
+            img{
+              width: 80%;
+              margin: auto;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 992px){
+
+  .html-app-header{
+    .container{
+      .col-md-12{
+        padding: 1rem 0;
+        h2{
+          font-size: 25px;
+          b{
+            font-size: 25px;
+          }
+        }
+        p{
+          font-size: 16px;
+        }
+        .btn-group{
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  #ht_1{
+    padding-bottom: 1rem;
+    .container{
+      .row{
+        .col-md-6{
+          h3{
+            font-size: 30px;
+          }
+          p{
+            font-size: 14px;
+          }
+          img{
+            width: 80%;
+            margin: auto;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  #ht_2{
+    .container{
+      .row{
+        .col-md-12{
+          h2{
+            font-size: 25px;
+          }
+          h3{
+            font-size: 16px;
+          }
+        }
+        .col-md-4{
+          img{
+            width: 30%;
+          }
+          h4{
+            font-size: 18px;
+          }
+          p{
+            font-size: 14px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  #ht_3{
+    .container{
+      .row{
+        .col-md-6{
+          h2{
+            font-size: 25px;
+          }
+          h2,h5{
+            margin-left: 0;
+          }
+          .square-box{
+            margin-bottom: 0;
+            .col-md-12{
+              .adv-box{
+                .icon{
+                  height: 80px;
+                  padding-top: 22px!important;
+                }
+                .icon-desc{
+                  width: 100%;
+                  padding-top: 10px;
+
+                }
+              }
+            }
+          }
+          &:nth-child(2){
+            margin-top: 200px;
+            img{
+              width: 90%;
+              margin: auto;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+

@@ -1,0 +1,261 @@
+
+/**************** ICONS STYLE *****************/
+
+@mixin mask($url){
+  mask-image: url($url);
+  -webkit-mask-image: url($url);
+}
+
+%icon-style{
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: top center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: top center;
+}
+
+.icon-location{
+  @include mask("/images/icons/maps-and-flags.svg");
+  @extend %icon-style;
+}
+
+.icon-phone{
+  @include mask("/images/icons/telephone-handle-silhouette.svg");
+  @extend %icon-style;
+}
+
+.icon-email{
+  @include mask("/images/icons/email.svg");
+  @extend %icon-style;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  display: inline-block;
+}
+
+
+.contact-us{
+  background-image: url("/images/contact-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100vh;
+  position: relative;
+  .container{
+    position: absolute;
+    bottom: 10px;
+    .row{
+      .col-md-5{
+        padding: 1.2rem 3rem;
+        box-shadow: 0 0 10px black;
+        border-radius: 5px;
+        color: white;
+        h3{
+          font-size: 25px;
+          margin-bottom: 1rem;
+        }
+        form{
+          input, textarea{
+            width: 100%;
+            box-shadow: none;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid #999;
+            background: transparent;
+            color: white;
+          }
+          input{
+            padding: 10px 0;
+            margin-bottom: 30px;
+          }
+          textarea{
+            height: 80px;
+            padding: 10px 0;
+            margin-bottom: 10px;
+          }
+          input[type="submit"] {
+            margin-top: 1rem;
+            border-bottom: none;
+            cursor: pointer;
+            color: white;
+            background-color: #e53027;
+          }
+          div{
+            position: relative;
+            label{
+              position: absolute;
+              top: 10px;
+              left: 0;
+              color: #999999;
+              transition: .5s;
+              pointer-events: none;
+            }
+            input:focus ~ label, textarea:focus ~ label,
+            input:valid ~ label, textarea:valid ~ label{
+              top: -12px;
+              left: 0;
+              color: white;
+              font-size: 12px;
+              font-weight: bold;
+            }
+          }
+          span{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/***************************************
+           Responsive Style
+****************************************/
+
+@media (min-width: 0) and (max-width: 576px){
+
+  .contact-us{
+    .container{
+      bottom: 20px;
+      .row{
+        .col-md-5{
+          padding: 1.3rem;
+          h3{
+            font-size: 18px;
+            text-align: center;
+          }
+          form{
+            span{
+              font-size: 12px;
+            }
+            input[type="submit"]{
+              margin-bottom: 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+  .contact-us{
+    height: 180vh;
+    .container{
+      bottom: 20px;
+      .row{
+        .col-md-5{
+          padding: 1.3rem;
+          h3{
+            font-size: 18px;
+            text-align: center;
+          }
+          form{
+            span{
+              font-size: 12px;
+            }
+            input[type="submit"]{
+              margin-bottom: 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 992px){
+
+  .contact-us{
+    height: 160vh;
+    .container{
+      bottom: 20px;
+      .row{
+        .col-md-5{
+          padding: 1.3rem;
+          h3{
+            font-size: 18px;
+            text-align: center;
+          }
+          form{
+            span{
+              font-size: 12px;
+            }
+            input[type="submit"]{
+              margin-bottom: 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 800px){
+
+  .contact-us{
+    height: 65vh;
+    .container{
+      bottom: 20px;
+      .row{
+        .col-md-5{
+          padding: 1.3rem;
+          h3{
+            font-size: 20px;
+            text-align: center;
+          }
+          form{
+            span{
+              font-size: 12px;
+            }
+            input[type="submit"]{
+              margin-bottom: 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1024px){
+
+  .contact-us{
+    .container{
+      top: 200px;
+      .row{
+        .col-md-5{
+          padding: 1.3rem;
+          h3{
+            font-size: 20px;
+            text-align: center;
+          }
+          form{
+            span{
+              font-size: 12px;
+            }
+            input[type="submit"]{
+              margin-bottom: 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,132 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.about-container{
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/about-us.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  .col-md-6{
+    padding: 3rem 15px;
+    background-color: white;
+    margin: 0 auto;
+    h1{
+      font-size: 30px;
+    }
+    p{
+      font-size: 15px;
+      line-height: 1.6;
+    }
+  }
+}
+
+/***************************************
+           Responsive Style
+****************************************/
+
+@media (min-width: 0) and (max-width: 576px){
+
+  .about-container{
+    height: 90vh;
+    padding: 120px 15px;
+    .col-md-6{
+      padding: 20px;
+      h1{
+        font-size: 19px;
+      }
+      p{
+        font-size: 11.5px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+  .about-container{
+    padding: 1rem;
+    height: 120vh;
+    .col-md-6{
+      margin-top: 5rem;
+      padding: 10px;
+      width: 80%;
+      h1{
+        font-size: 18px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 992px){
+
+  .about-container{
+    padding: 1rem;
+    height: 120vh;
+    .col-md-6{
+      margin-top: 5rem;
+      padding: 10px;
+      width: 80%;
+      h1{
+        font-size: 18px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 800px){
+
+  .about-container{
+    padding: 1rem;
+    .col-md-6{
+      margin-top: 10rem;
+      padding: 20px;
+      width: 100% !important;
+      h1{
+        font-size: 19px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1024px){
+
+  .about-container{
+    padding: 1rem;
+    .col-md-6{
+      margin-top: 10rem;
+      padding: 20px;
+      width: 100%;
+      h1{
+        font-size: 19px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+
+}
+
